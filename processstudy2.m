@@ -16,17 +16,16 @@ function argout = processstudy()
 %declare file data
 % list directories
 % 'C:\\study2\\subject2001\\',
-%fpa = {'C:\\study2\\subject3001\\','C:\\study2\\subject5001\\','C:\\study2\\subject6001\\','C:\\study2\\subject7001\\','C:\\study2\\subject8001\\'};
-fpa = {'C:\\study2\\subject3001\\'};
+fpa = {'C:\\study2\\subject2002\\','C:\\study2\\subject3002\\','C:\\study2\\subject5002\\','C:\\study2\\subject6002\\','C:\\study2\\subject7002\\','C:\\study2\\subject8002\\'};
+%fpa = {'C:\\study2\\subject3001\\'};
 % list files and cc
 fa = {
-   % {{'subject2S001R02',''},{'subject2S001R04',''},{'subject2S001R05',''},{'subject2S001R06',''},{'subject2S001R09',''},{'subject2S001R10',''}},
-   % R02 wouldn't run!?!
-    {{'subject3S001R02',''}}
-   % {{'subject5S001R02',''},{'subject5S001R03',''},{'subject5S001R04',''},{'subject5S001R05',''},{'subject5S001R08',''},{'subject5S001R09',''}},
-    %{{'subject6S001R02',''},{'subject6S001R03',''},{'subject6S001R04',''},{'subject6S001R05',''},{'subject6S001R08',''},{'subject6S001R09',''}},
-    %{{'subject7S001R02',''},{'subject7S001R03',''},{'subject7S001R04',''},{'subject7S001R05',''},{'subject7S001R08',''},{'subject7S001R09',''}},
-    %{{'subject8S001R02',''},{'subject8S001R04',''},{'subject8S001R05',''},{'subject8S001R06',''},{'subject8S001R09',''},{'subject8S001R10',''}}
+    {{'subject2S002R01',''},{'subject2S002R02',''},{'subject2S002R03',''},{'subject2S002R04',''},{'subject2S002R07',''},{'subject2S002R08',''}},
+    {{'subject3S002R01',''},{'subject3S002R02',''},{'subject3S002R03',''},{'subject3S002R04',''},{'subject3S002R07',''},{'subject3S002R08',''}},
+    {{'subject5S002R01',''},{'subject5S002R02',''},{'subject5S002R03',''},{'subject5S002R04',''},{'subject5S002R07',''},{'subject5S002R08',''}},
+    {{'subject6S002R01',''},{'subject6S002R02',''},{'subject6S002R03',''},{'subject6S002R04',''},{'subject6S002R07',''},{'subject6S002R08',''}},
+    {{'subject7S002R01',''},{'subject7S002R02',''},{'subject7S002R03',''},{'subject7S002R04',''},{'subject7S002R07',''},{'subject7S002R08',''}},
+    {{'subject8S002R01',''},{'subject8S002R02',''},{'subject8S002R03',''},{'subject8S002R04',''},{'subject8S002R07',''},{'subject8S002R08',''}}
        %{{'nfaS019R01',''},{'nfaS019R02',''},{'nfaS019R03',''},{'nfaS019R04',''},{'nfaS019R06','{0,7,5,3,1,7,5,8,2,4,4}'},{'nfaS019R07',''},{'nfaS019R10',''}}
     };
 
