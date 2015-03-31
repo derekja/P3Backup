@@ -115,6 +115,8 @@ if nargin<1 %GUI
     
     events = stateNames(temp{1});
     clear('temp');
+
+   
 elseif nargin==1%No GUI, no events provided.
     events = stateNames; %Select all events.
 elseif nargin==2 && ~iscell(events)
@@ -150,6 +152,7 @@ EEG.trials = 1;
 EEG.data = signal';
 if isfield(parameters, 'ChannelNames')
     EEG.chanlocs = struct('labels', parameters.ChannelNames.Value);% Assign channel labels
+    EEG.chanlocs = struct('labels', rot90({'P4','P8','CP2','CP6','T8','FC6','FC2','FC1','FC5','T7','CP5','CP1','P7','P3'},3));
 elseif isfield(parameters, 'TransmitChList')
     EEG.chanlocs = struct('labels', parameters.TransmitChList.Value);% Assign channel labels
 end
