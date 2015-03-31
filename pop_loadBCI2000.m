@@ -116,7 +116,8 @@ if nargin<1 %GUI
     events = stateNames(temp{1});
     clear('temp');
 
-   
+  
+    
 elseif nargin==1%No GUI, no events provided.
     events = stateNames; %Select all events.
 elseif nargin==2 && ~iscell(events)
@@ -195,9 +196,11 @@ for k = 1:length(stateNames)
         'position', num2cell(states.(stateNames{k}).value),...
         'duration', num2cell(states.(stateNames{k}).duration),...
         'StimulusType', num2cell(states.(stateNames{k}).StimulusType));
+    end
+     if ~isempty(these_events)
+         [these_events.type] = deal(stateNames{k});
+         EEG.event = [EEG.event these_events'];
      end
-    [these_events.type] = deal(stateNames{k});
-    EEG.event = [EEG.event these_events'];
     
 
     
